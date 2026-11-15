@@ -1,4 +1,4 @@
-# 🚨 Snort Sentinel — Practical IDS Home Lab
+# 🚨 Snort Sentinel: Practical IDS Home Lab
 
 ![Snort](https://img.shields.io/badge/IDS-Snort-red)
 ![Ubuntu](https://img.shields.io/badge/OS-Ubuntu-orange)
@@ -9,7 +9,7 @@
 
 A hands-on **Network Intrusion Detection System (NIDS)** lab. **Snort** runs on Ubuntu and detects reconnaissance traffic (ICMP pings and Nmap SYN scans) launched from **Kali Linux** against a **Metasploitable 2** target. Every packet is verified in **Wireshark**.
 
-📝 **Full walkthrough with screenshots:** [Medium — Practical IDS Lab (Snort)](https://secbyarafai.medium.com/practical-ids-lab-snort-a599915b10d6) · [Blogger version](https://secbyarafai.blogspot.com/2025/10/project-2-snort-sentinel-practical-ids.html)
+📝 **Full walkthrough with screenshots:** [Medium: Practical IDS Lab (Snort)](https://secbyarafai.medium.com/practical-ids-lab-snort-a599915b10d6) · [Blogger version](https://secbyarafai.blogspot.com/2025/10/project-2-snort-sentinel-practical-ids.html)
 
 ---
 
