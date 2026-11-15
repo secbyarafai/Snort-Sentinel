@@ -1,0 +1,4 @@
+# Keep Linux line endings so the shell scripts run on Ubuntu/Kali
+*.sh text eol=lf
+*.rules text eol=lf
+*.snippet text eol=lf

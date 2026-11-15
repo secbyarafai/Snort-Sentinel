@@ -1,0 +1,13 @@
+# ---------------------------------------------------------------
+# Lines changed in /etc/snort/snort.conf for this lab
+# (only the relevant lines - not the full config file)
+# ---------------------------------------------------------------
+
+# Step 1: set the protected network to the lab subnet
+ipvar HOME_NET 192.168.113.0/24
+
+# Everything outside the lab counts as external
+ipvar EXTERNAL_NET !$HOME_NET
+
+# Step 7 of snort.conf: make sure the custom rules file is loaded
+include $RULE_PATH/local.rules

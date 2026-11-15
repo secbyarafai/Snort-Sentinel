@@ -1,0 +1,12 @@
+# =============================================================
+#  Snort Sentinel - tuned rules (next step after the basic lab)
+#  These add detection_filter so one scan raises a few alerts
+#  instead of one alert per packet, reducing alert fatigue.
+#  Use these INSTEAD of local.rules, not alongside it.
+# =============================================================
+
+# Alert only if one source sends more than 5 pings in 10 seconds
+alert icmp any any -> $HOME_NET any (msg:"ICMP Ping Sweep Detected"; itype:8; detection_filter:track by_src, count 5, seconds 10; sid:1000101; rev:1;)
+
+# Alert only if one source sends more than 20 SYNs in 5 seconds (port scan behaviour)
+alert tcp any any -> $HOME_NET any (msg:"Possible NMAP SYN port scan"; flags:S; detection_filter:track by_src, count 20, seconds 5; sid:1000102; rev:1;)
